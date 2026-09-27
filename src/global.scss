@@ -1,0 +1,96 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+// @import '@ionic/angular/css/palettes/dark.system.css';
+
+@import "leaflet/dist/leaflet.css";
+
+.marcador-con-icono {
+  border: 0;
+  background: transparent;
+}
+
+.pin-azul {
+  display: flex;
+  width: 38px;
+  height: 38px;
+  transform: rotate(45deg);
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #ffffff;
+  border-radius: 50% 50% 50% 0;
+  background: #16a9e2;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+}
+
+.pin-azul__icono {
+  display: block;
+  width: 28px;
+  height: 28px;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  background: #ffffff;
+  object-fit: contain;
+}
+
+.popup-lugar-fijo .leaflet-popup-content {
+  margin: 10px;
+}
+
+.popup-lugar {
+  width: 190px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+.popup-lugar__contenido {
+  padding: 12px;
+}
+
+.popup-lugar__contenido h3 {
+  margin: 0 0 6px;
+  color: #1559a8;
+  font-size: 16px;
+}
+
+.popup-lugar__contenido p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  line-height: 1.35;
+}
